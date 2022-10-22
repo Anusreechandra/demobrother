@@ -113,26 +113,7 @@
 	border-radius: 4px;
     font-size:11px
 }
-.team-slider .owl-dots {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -60px;
-	text-align: center;
-	width: 100%;
-}
-.team-slider button.owl-dot {
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	margin: 0 6px;
-	text-align: center;
-	border-radius: 50%;
-	background-color: #262626;
-}
-.team-slider .owl-dot.active {
-	background-color: #1998e7 ;
-}
+
 .move-animation {
 	position: relative;
 	-webkit-animation: move-animation 2s ease-in-out infinite;
@@ -172,18 +153,16 @@
                 <!-- Welcome Content -->
                 <div class="col-12 col-lg-6 col-md-12">
                     <div class="welcome-content">
-                        <div class="promo-section">
-                            <h3 class="w-text big-font wow fadeInUp" data-wow-delay="0.2s" style="font-size:39px">Dedicated and Reliable Cement
+                        
+                            <h3 class="w-text big-font wow fadeInUp bannertitle" data-wow-delay="0.2s" style="font-size:39px">Dedicated and Reliable Cement
                                 Company</h3>
-                        </div>
-                        <!-- <h4 class="w-text fadeInUp" data-wow-delay="0.2s">Cement Company, Builders Know Our Product
-                            Well.</h4> -->
+                        
                         <p class="g-text wow fadeInUp" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Vitae soluta, dignissimos aut, assumenda dolore totam natus qui cum vel
                             omnis voluptates.</p><br><br>
-                        <div class="more-btn-group fadeInUp" data-wow-delay="0.4s">
-                            <a href="{% url 'web:contact' %}" class="btn more-btn orange mr-3">contact us</a> &nbsp;&nbsp;&nbsp;
-                            <a href="{% url 'web:aboutus' %}" class="btn more-btn"> Learn more</a>
+                        <div class="more-btn-group fadeInUp button-query-div" data-wow-delay="0.4s">
+                            <a href="{% url 'web:contact' %}" class="btn more-btn orange mr-3 button-query1">contact us</a> &nbsp;&nbsp;&nbsp;
+                            <a href="{% url 'web:aboutus' %}" class="btn more-btn button-query2"> Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -214,17 +193,17 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
                 <div class=" fadeInUp" data-wow-delay="0.7s">
-                    <img src="{% static 'web/img/about1.png' %}" alt="">
+                    <img src="{% static 'web/img/concrete.jpg' %}" alt="">
                 </div>
             </div>
 
             <div class="col-12 col-lg-6 offset-lg-0">
                 <div class="who-we-contant mt-s">
-                    <div class="more-dots text-left fadeInUp" data-wow-delay="0.2s">
-                        <span class="gradient-text blue">Cement Company that provides the best quality</span>
+                    <div class="more-dots text-left fadeInUp bold" data-wow-delay="0.2s">
+                        <span class="gradient-text blue">Cement Company that provides the best quality.<br>Reliable and Dedicated Cement Company for Your
+                            Construction.</span>
                     </div>
-                    <h4 class="fadeInUp bold" data-wow-delay="0.3s">Reliable and Dedicated Cement Company for Your
-                        Construction.</h4>
+
                     <!-- <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Duis at dictum risus, non suscipit arcu. sit amet convallis nunc scelerisque in. ipsum dolor sit
                         amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. sit amet convallis
@@ -235,14 +214,14 @@
                             <div class="col-md-6">
                                 <div class="side-feature-list-item">
                                     <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
-                                    <div class="foot-c-info"><br><br>Highest Volume dealer for continues 25
+                                    <div class="foot-c-info">Highest Volume dealer for continues 25
                                         years-Ramco- Cements-kerala</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="side-feature-list-item">
                                     <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
-                                    <div class="foot-c-info"><br><br>Highest Voulme Sales Award for 7 Years- HSD- Indian
+                                    <div class="foot-c-info">Highest Voulme Sales Award for 7 Years- HSD- Indian
                                         Oil Corporation Limited</div>
                                 </div>
                             </div>
@@ -297,7 +276,7 @@
     <div class="section-heading text-center">
 
         <div class="more-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
-            <span class="gradient-text blue">What We Deliver</span>
+            <span class="gradient-text blue" style="font-size:16px;">What We Deliver</span>
         </div>
         <!-- <h2 class="wow fadeInUp" data-wow-delay="0.3s">What We Deliver</h2> -->
         <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
@@ -319,7 +298,7 @@
                 
 				<div class="row">
                     
-					<div class="col-lg-12">
+					<div class="col-lg-12 ">
 						<div class="team-slider owl-carousel">
                             {% for product in pimage %}
 							<div class="single-box text-center">
@@ -328,7 +307,6 @@
 								
                                 <div class="info-area">
 									<h4 style="font-size:12px;">{{product.pname}}</h4>
-									<a href="#">Learn More</a>
 								</div>
 							</div>
                             {% endfor %}
@@ -339,12 +317,11 @@
 				</div>
                 
 			</div>
-            <br><br>
             
     
         </div>
-        <div class="col-sm-12 container text-right mt-4">
-            <a class="btn info-btn green-btn fadeInUp" style="font-size: 12px; " data-wow-delay="0.6s" href="{% url 'web:product' %}">More </a>
+        <div class="col-sm-12 container text-center mt-4">
+            <a class="" style="font-size: 12px; " data-wow-delay="0.6s" href="{% url 'web:product' %}">Know More >>></a>
         </div><br><br>
        
 		</div>
@@ -375,7 +352,7 @@
                         <h3 class="g-text fadeInUp" data-wow-delay="0.3s">Get Your Quote or Call: (080) 5388-273-284
                         </h3>
                         <!-- <h2 class="w-text mb-0">Are You Ready? Book Appointment Now!</h2> -->
-                        <a class="btn info-btn mt-30 green-btn fadeInUp" style="    min-width: 134px;
+                        <a class="btn more-btn mt-30 fadeInUp" style="    min-width: 134px;
                         font-size: 11px;" data-wow-delay="0.6s" href="#">Read More</a>
                     </div>
                 </div>
@@ -402,8 +379,8 @@
             <div class="more-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
                 <!-- <span class="gradient-text blue">Why Choose Us</span> -->
             </div>
-            <h2 class=" fadeInUp" data-wow-delay="0.3s"> VERTICALS</h2>
-            <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+            <h2 class=" fadeInUp" data-wow-delay="0.3s">Verticals</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
                 accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
         </div>
     </div>
@@ -428,7 +405,7 @@
     
             <div class="row" style="margin: 0px;">
 
-                {% for verticals in vertical %}
+                {% for vertical in verticals %}
                 <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
                     <!-- Content -->
                     
@@ -436,9 +413,9 @@
                         <!-- Icon -->
                         
                         <div class="service_icon">
-                            <img src="{{verticals.vimage.crop.270x280}}" alt="" class="width-90">
+                            <img src="{{vertical.vimage.crop.270x280}}" alt="" class="width-90">
                         </div>
-                        <h5 style="font-size: small; " id="cements">{{verticals.vname}}</h5 >
+                        <h5 style="font-size: small; " id="cements">{{vertical.vname}}</h5 >
                         
                        
                     </div>
@@ -449,9 +426,9 @@
              
             </div>
         </div>
-        <div class="col-sm-12 container text-right">
-            <a class="btn info-btn green-btn fadeInUp" style="    min-width: 134px;
-            font-size: 11px;" data-wow-delay="0.6s" href="{% url 'web:groupofcompany' %}">More </a>
+        <div class="col-sm-12 container text-center">
+            <a class="" style="min-width: 134px;
+            font-size: 11px;" data-wow-delay="0.6s" href="{% url 'web:groupofcompany' %}">Know More >>></a>
         </div>
     </section>
 
@@ -475,7 +452,7 @@
 
 
 <!-- ##### Team Area Start ##### -->
-<section class="our_team_area section-padding-0-0 clearfix" id="team">
+<!-- <section class="our_team_area section-padding-0-0 clearfix" id="team">
     <div class="container  mt-4">
         <div class="row" style="margin: 0px;">
             <div class="col-12">
@@ -484,7 +461,6 @@
                     <div class="more-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
                         <span class="gradient-text blue">GALLERY</span>
                     </div>
-                    <!-- <h2 class="fadeInUp" data-wow-delay="0.3s">Awesome Team</h2> -->
                     <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo. </p>
                 </div>
@@ -493,7 +469,21 @@
 
 
     </div>
-</section>
+</section> -->
+
+<section class="our_team_area section-padding-0-0 clearfix" id="services" style="padding-top:17px;">
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <div class="more-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                <!-- <span class="gradient-text blue">Why Choose Us</span> -->
+            </div>
+            <h2 class=" fadeInUp" data-wow-delay="0.3s">Gallery</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+                accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+        </div>
+    </div>
 
 
 <!-- <section class="ftco-section">
@@ -521,15 +511,15 @@
 
 
 <!-- Gallery -->
-<section id="team" class="pb-5">
-    <div class="container-fluid mt-4 ">
+<section id="team">
+    <div class="container-fluid">
         <!-- Gallery -->
-        <div class="container page-top mt-4">
-            <div class="row mt-4" >
+        <div class="container page-top">
+            <div class="row" style="padding-bottom: 30px;" >
                 {% for gallery in image %}
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb col-6 col-sm-6 mt-4 mb-4">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb col-6 col-sm-6">
                    
-            <div class="figure">
+            <div class="figure mt-4">
             <img class="Sirv image-main" src="{{gallery.image.crop.270x280}}">
             <img class="Sirv image-hover" data-src="{{gallery.itwo.crop.270x280}}">
             </div>
@@ -538,13 +528,9 @@
             </div>
         </div>
 
-        <br>
-        <br>
-        <br>
-
-        <div class="col-sm-12 container text-right">
-            <a class="btn info-btn green-btn fadeInUp" style="    min-width: 134px;
-            font-size: 11px;" data-wow-delay="0.6s" href="{% url 'web:gallery' %}">More </a>
+        <div class="col-sm-12 container text-center">
+            <a class="" style="    min-width: 134px;
+            font-size: 11px;" data-wow-delay="0.6s" href="{% url 'web:gallery' %}">Know More >>></a>
         </div><br><br>
 
     </div>
@@ -592,25 +578,25 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="padding-top:30px;">
 
             <!-- Single Blog Post -->
             {% for Ad in ad %}
-            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6 mt-4">
+            <div class="col-lg-3 col-md-4 col-xs-6 col-6 col-sm-6">
                 <div class="single-blog-area fadeInUp" data-wow-delay="0.2s">
                     <!-- Post Thumbnail -->
                     <div class="blog_thumbnail">
-                        <img src="{{Ad.adimage.crop.570x480}}" alt="">
+                        <img src="{{Ad.adimage.crop.570x480}}" alt="" max-width="100%;">
                     </div>
                     <!-- Post Content -->
                     <div class="blog-content">
 
 
-                        <div class="post-meta mt-20">
+                        <div class="post-meta">
                             
                         </div>
                        
-                            <h4 style="font-size: 11px;color: black;">{{Ad.adtitle}}</h4>
+                            <h4 class="text-justify" style="font-size: 11px;color: black;">{{Ad.adtitle}}</h4>
                        
                     </div>
                 </div>
@@ -638,7 +624,7 @@
     <div class="container">
         <div class="title">
             <!-- <h5>Testimonials</h5> -->
-            <h2 style="font-size:30px ;">What our clients say</h2>
+            <h2 style="font-size:18px ;">What our clients say</h2>
         </div>
         <div class="owl-carousel owl-theme testi">
             <!-- Single Starts -->
@@ -741,14 +727,16 @@
 
 
 <div id="myModal" class="modal fade" style="align-items: center;">
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="width: 350px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        
        
-        <div class="modal-content text-center" style="width:70%;">
+        <div class="modal-content text-center">
             {% for modal in modal %}
                <img src="{{modal.modalimage.url}}"  style="max-width:100%;">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+               
            {% endfor %}
         </div>
        

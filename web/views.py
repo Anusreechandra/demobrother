@@ -33,7 +33,7 @@ def index(request):
          "ad":ad,
          "client":client, 
          "Video":video,
-          "vertical":verticals,
+          "verticals":verticals,
           "modal":modal,
          
 

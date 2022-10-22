@@ -42,7 +42,6 @@
 }
     .breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item > a {
     font-size: 11px;
-    text-transform: uppercase;
     color: #fff;
 }
 .breadcumb--con .title {
@@ -318,11 +317,10 @@
             
 
 
-    <section id="team">
-        <div class="row" style="margin: 0px;"  >
-            <div class="col-lg-12" style="margin-top: -154px;">
+        <div class="row" style="padding-bottom: 30px;"  >
+            <div class="col-md-3"></div>
                 
-                    <div class="main-search-input" style="margin: 135px auto;">
+                    <div class="main-search-input col-md-6" style=" text-align: center;">
                        <ul  class="food-menu-filter">
                         <!-- <li class="active" data-filter="*">All</li> -->
                         {% for brand in brands %}
@@ -334,12 +332,8 @@
                         {% endfor %}
                        </ul>
                      </div>
-                     
-               
-              
-                
-
-            </div>
+            <div class="col-md-3"></div>
+       
         </div>
 		<!-- <div class="container">
 			<div class="row">
@@ -349,14 +343,14 @@
 			</div>
 		</div> -->
 		<div class="testimonial-box">
-			<div class="container">
+			<div class="container" style="padding-bottom:30px;">
                 
-				<div class="row product-items">
+				<div class="row product-items" style="justify-content: center;">
                     {% for product in products %}
-					<div class="col-sm-2 isotop-grid {{product.brandname.brandname|slugify}}" style="width:50%;">
+					<div class="col-sm-2 isotop-grid {{product.brandname.brandname|slugify}}">
 						<div >
                             
-							<div class="single-box text-center" >
+							<div class="single-box text-center"  style="width:100%;">
 
 								<div class="img-area"><img alt="" class="img-fluid move-animation" src="{{product.pimage.crop.570x480}}"></div>
 								
@@ -372,12 +366,13 @@
 						</div>
 					</div>
                     {% endfor %}
+
                     
 				</div>
                 
 			</div>
 		</div>
-	</section>        
+      
 
          
    

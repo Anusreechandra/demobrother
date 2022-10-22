@@ -85,8 +85,12 @@ h5,
 h6 {
     font-family: 'Poppins', sans-serif;
     color: #0072bc;
-    line-height: 1.4;
     font-weight: 500;
+    line-height: 1.4;
+}
+
+.line-height{
+    line-height: 2.4;
 }
 
 a,
@@ -97,6 +101,7 @@ a:active {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     outline: none;
+    color:black;
 }
 
 li {
@@ -111,7 +116,7 @@ p {
 }
 
 img {
-    max-width: 78%;
+    max-width: 100%;
     height: auto;
     
 }
@@ -448,8 +453,9 @@ ol {
     }
 }
 .section-padding-100 {
-    padding-top: 100px;
-    padding-bottom: 1px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: rgb(240, 240, 240);
 }
 .section-padding-100-70 {
     background: url(../img/bg-img/c-bg.jpg) repeat;
@@ -580,7 +586,7 @@ ol {
 }
 
 .section-padding-100-0 {
-    padding-top: 0px;
+    padding-top: 50px;
     padding-bottom: 0;
 }
 
@@ -625,8 +631,9 @@ ol {
 }
 
 .section-padding-150-0 {
-    padding-top: 150px;
+    padding-top: 60px;
     padding-bottom: 0;
+    background-color: rgb(243, 243, 243);
 }
 
 .section-padding-0-150 {
@@ -854,8 +861,8 @@ ol {
 
 .more-dots span {
     font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 0px;
     display: inline-block;
     background-image: linear-gradient(135deg, #846FF4 0%, #F17674 100%);
     -webkit-background-clip: text;
@@ -3959,7 +3966,7 @@ p.artficial:before{
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 700;
 }
@@ -5994,7 +6001,7 @@ p.artficial:before{
 .single-blog-area {
     position: relative;
     z-index: 1;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .post-meta{margin-top: 20px}
 .post-meta p {
@@ -6329,7 +6336,7 @@ textarea:required {
 }
 
 .breadcumb--con {
-    padding-top: 90px;
+    padding-top: 25px;
 }
 
 .breadcrumb {
@@ -6341,7 +6348,7 @@ textarea:required {
 }
 
 .breadcumb--con .title {
-    font-size: 42px;
+    font-size: 29px;
     margin-bottom: 15px;
     margin-left: 0;
 }
@@ -6350,7 +6357,6 @@ textarea:required {
 .breadcrumb-item.active,
 .breadcrumb-item > a {
     font-size: 13px;
-    text-transform: uppercase;
     color: #fff;
 }
 
@@ -7336,7 +7342,7 @@ body.light-version {
 
 .light-version p {
     color:black;
-    font-size: 14px ;
+    font-size: 13px ;
        
     line-height: 20px;
 
@@ -7358,7 +7364,7 @@ body.light-version {
 .light-version textarea:valid ~ label,
 .light-version .copywrite_text > p > a {
     color: #0072bc;
-    font-size:18px;
+    font-size:16px;
 }
 
 .light-version .more-btn-group dt {
@@ -7445,7 +7451,7 @@ body.light-version {
     color: rgba(255,255,255,.7)
 }
 .light-version .our_services_area{
-    padding-bottom: 70px 
+    padding-bottom: 30px 
 }
 
 .light-version .service_single_content {
@@ -7800,10 +7806,9 @@ body.light-version {
   } */
 
  
-  .main-search-input {
+  /* .main-search-input {
     margin: 150px auto;
     border-radius: -11px;
-    max-width:1000px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.12);
@@ -7812,7 +7817,7 @@ body.light-version {
     align-items: flex-start;
     padding: 9px;
     max-height: 68px;
-}
+} */
 
 @media only screen and (max-width: 576px) and (min-width: 320px){
     .prdt-btn {
@@ -7894,6 +7899,35 @@ body.light-version {
     border: 0;
     border-radius: 50px;
 }
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .bannertitle {
+    font-size: 30px !important; 
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+    .more-btn{
+    position: relative;
+    z-index: 1;
+    min-width: 160px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 0px;
+    background: #0072bc;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    }
+}
+
 
 
 
