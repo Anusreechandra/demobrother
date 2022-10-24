@@ -159,9 +159,9 @@
                         
                         <p class="g-text wow fadeInUp" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Vitae soluta, dignissimos aut, assumenda dolore totam natus qui cum vel
-                            omnis voluptates.</p><br><br>
+                            omnis voluptates.</p><br>
                         <div class="more-btn-group fadeInUp button-query-div" data-wow-delay="0.4s">
-                            <a href="{% url 'web:contact' %}" class="btn more-btn orange mr-3 button-query1">contact us</a> &nbsp;&nbsp;&nbsp;
+                            <a href="{% url 'web:contact' %}" class="btn more-btn orange mr-3 button-query1">contact us</a>
                             <a href="{% url 'web:aboutus' %}" class="btn more-btn button-query2"> Learn more</a>
                         </div>
                     </div>
@@ -298,12 +298,12 @@
                 
 				<div class="row">
                     
-					<div class="col-lg-12 ">
+					<div class="col-lg-12">
 						<div class="team-slider owl-carousel">
                             {% for product in pimage %}
 							<div class="single-box text-center">
 
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="{{product.pimage.crop.570x480}}"></div>
+								<div class="img-area"><img alt="" class="" src="{{product.pimage.crop.570x480}}"></div>
 								
                                 <div class="info-area">
 									<h4 style="font-size:12px;">{{product.pname}}</h4>

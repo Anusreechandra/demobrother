@@ -1824,7 +1824,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     }
     .welcome-content {
         vertical-align: middle;
-        margin-top: 100px !important
+        margin-top: 340px !important
 
     }
     .main-ilustration-3{
@@ -7903,7 +7903,7 @@ body.light-version {
 @media (min-width: 320px) and (max-width: 576px) {
     .bannertitle {
     font-size: 30px !important; 
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     margin-left: 0;
 }
     .more-btn{

@@ -431,7 +431,7 @@ if(body.classList.contains("dark")){
    <nav class="navbar navbar-expand-lg navbar-white fixed-top  " id="banner" >
         <div class="container">
            
-            <a class="navbar-brand" ><span><img src="{% static 'web/logo/brothers logo.png' %}" alt="logo"></span> </a>
+            <a href="{% url 'web:index' %}" class="navbar-brand"  ><span><img src="{% static 'web/logo/brothers logo.png' %}" alt="logo"></span> </a>
 
            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

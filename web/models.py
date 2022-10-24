@@ -9,7 +9,7 @@ from django.utils.text import slugify
 
 
 class Gallery(models.Model):
-    image         = VersatileImageField('Image',upload_to = 'image/testimagemodel/')
+    image          = VersatileImageField('Image',upload_to = 'image/testimagemodel/')
     class Meta:
         verbose_name_plural =("Gallery")
 
