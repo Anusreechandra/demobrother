@@ -286,10 +286,10 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <nav aria-label="breadcrumb" class="breadcumb--con text-center">
-                        <h2 class="w-text title wow fadeInUp productb" data-wow-delay="0.2s">Product</h2>
+                        <h2 class="w-text title wow fadeInUp productb" data-wow-delay="0.2s">Products</h2>
                         <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
                             <li class="breadcrumb-item"><a href="{% url 'web:index' %}m;p80ed8rpwep">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Product</li>
+                            <li class="breadcrumb-item active" aria-current="page">Products</li>
                         </ol>
                     </nav>
                 </div>
@@ -303,6 +303,11 @@
 <section class="hos-features section-padding-100-70" >
 
     <div class="section-heading text-center">
+
+        <h2 class="wow"style="font-size:16px; margin-bottom:0px;">Cement Company that provides the best quality.</h2>
+
+        <p style="padding-bottom:15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptas tempora inventore </p>
+                
 
      
         <h2 class="wow fadeInUp" data-wow-delay="0.3s"style="font-size:18px;">What We Deliver</h2>
@@ -344,10 +349,11 @@
 		</div> -->
 		<div class="testimonial-box">
 			<div class="container" style="padding-bottom:30px;">
-                
+
 				<div class="row product-items" style="justify-content: center;">
                     {% for product in products %}
 					<div class="col-sm-2 isotop-grid {{product.brandname.brandname|slugify}}">
+                        
 						<div >
                             
 							<div class="single-box text-center"  style="width:100%;">

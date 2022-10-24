@@ -80,13 +80,13 @@
         });
     }
 
-    // :: ScrollUp Active Code
-    if ($.fn.scrollUp) {
-        $.scrollUp({
-            scrollSpeed: 1500,
-            scrollText: 'Scroll Top'
-        });
-    }
+    // // :: ScrollUp Active Code
+    // if ($.fn.scrollUp) {
+    //     $.scrollUp({
+    //         scrollSpeed: 1500,
+    //         scrollText: 'Scroll Top'
+    //     });
+    // }
     // :: Wow Active Code
     if ($window.width() > 767) {
         new WOW().init();
